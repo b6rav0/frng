@@ -374,7 +374,9 @@ section.register section.form-container form button {
   }
 
   section.register section.form-container {
-    width: 90%;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
   }
   section.register section.form-container form input[name=fname],
 section.register section.form-container form input[name=lname] {
