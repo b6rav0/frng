@@ -1,0 +1,65 @@
+footer {
+    padding: 10% 5% 5%;
+    color: #fff;
+    background: $dark-green-color;
+
+
+
+    div.column {
+        flex: 25%;
+
+        h2 {
+            margin-bottom: 5%;
+            font-family: "Roboto Slab", sans-serif;
+        }
+
+        ul {
+            li {
+                margin: 5% 0;
+
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    div.column:first-child {
+        padding-top: 10%;
+    }
+
+    div:last-child {
+        div.address {
+            margin: 5% 0;
+
+            h3 {
+                font-size: 1em;
+                font-weight: 600;
+            }
+
+            address {
+                margin: 2.5% 0 0;
+                font-style: normal;
+
+                p {
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+}
+
+
+// Responsiveness
+@media (max-width: 800px) {
+    footer {
+        div.column {
+            margin: 10% 0;
+        }
+
+        div.column:first-child {
+            margin-top: 0;
+            padding-top: 0;
+        }
+    }
+}

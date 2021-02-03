@@ -1,0 +1,270 @@
+section.hero {
+    color: #FFF;
+    background: grey url("../img/hero.jpg") no-repeat center;
+    background-size: cover;
+    background-blend-mode: darken;
+
+    h1 {
+        margin-right: 50%;
+        color: #FFF;
+        font-size: 4em;
+        font-weight: 800;
+    }
+
+    p {
+        margin: 2% 60% 2% 0;
+        font-size: 1.2em;
+    }
+
+    button {
+        width: 15%;
+        margin: 0;
+    }
+}
+
+section.services {
+    img {
+        float: left;
+        width: 40em;
+        padding-right: 5%;
+    }
+
+    p {
+        margin-top: 2%;
+    }
+
+    ul {
+        list-style: circle;
+
+        li {
+            margin: 1% 0;
+        }
+    }
+}
+
+
+section.accounts {
+    background: $lime-ish-bg;
+
+    h1 {
+        text-align: center;
+    }
+
+    div.flex {
+        div.column {
+            flex: 25%;
+            margin: 2.5%;
+            margin-bottom: 0;
+            padding: 2%;
+            background: #FFF;
+
+            h2 {
+                color: $dark-green-color;
+            }
+
+            ul {
+                margin-top: 5%;
+
+                li {
+                    margin-top: 5%;
+                }
+            }
+        }
+
+        div:first-child {
+            margin-left: 0;
+        }
+
+        div:last-child {
+            margin-right: 0;
+        }
+    }
+
+    button {
+        width: 20%;
+        margin-top: 2%;
+    }
+}
+
+
+
+section.register {
+    padding: 0;
+
+    section.form-container {
+        width: 60%;
+        margin: 10% auto;
+        padding: 5%;
+        background: $nav-bg;
+        border-top-left-radius: 20em;
+        border-top-right-radius: 20em;
+
+        h1,
+        h2 {
+            text-align: center;
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+
+        form {
+            margin-top: 10%;
+
+            input[type = "text"],
+            input[type = "email"],
+            input[type = "number"],
+            select {
+                display: block;
+                width: 100%;
+                height: 2.5em;
+                margin: 2.5% 0;
+                padding: 2%;
+                background: none;
+                border: none;
+                border-bottom: 1px solid black;
+            }
+
+            input[name = "fname"],
+            input[name = "lname"] {
+                display: inline;
+                width: 45%;
+            }
+
+            input[name = "lname"] {
+                margin-left: 9.5%;
+            }
+
+            // Removes the arrow buttons in the phone number input field
+            input::-webkit-outer-spin-button,
+			input::-webkit-inner-spin-button {
+			    -webkit-appearance: none;
+			    margin: 0;
+			}
+
+			input[type="number"] {
+			    -moz-appearance: textfield;
+			}
+
+            select {
+                padding: 0;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+            }
+
+            select::-ms-expand {
+                display: none;
+            }
+
+            input[type = "radio"] {
+                display: inline-block;
+            }
+
+            label[for = "demo"] {
+                padding-right: 5%;
+            }
+
+            div {
+                margin: 5% 0;
+
+                p {
+                    display: inline;
+
+                    b {
+                        color: $dark-green-color;
+                    }
+
+                    a {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            button {
+                width: 30%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+
+
+// Responsiveness
+@media (max-width: 800px) {
+    section.hero {
+        h1 {
+            margin-right: 20%;
+            font-size: 3em;
+        }
+
+        p {
+            margin-right: 20%;
+        }
+
+        button {
+            width: 30%;
+        }
+    }
+
+
+    section.services {
+        img {
+            display: block;
+            float: none;
+            width: 100%;
+            margin-bottom: 5%;
+            text-align: center;
+        }
+
+        ul {
+            padding-left: 5%;
+        }
+    }
+
+    section.accounts {
+        div.flex {
+            margin-top: 5%;
+
+            div.column {
+                margin: unset;
+                margin: 5% 0;
+                padding: 5%;
+            }
+        }
+
+        button {
+            width: 30%;
+        }
+    }
+
+
+    section.register {
+        section.form-container {
+            width: 90%;
+
+            form {
+                input[name = "fname"],
+                input[name = "lname"] {
+                    width: 100%;
+                    margin: unset;
+                    margin: 2.5% 0;
+                }
+
+                button {
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 400px) {
+    section.hero {
+        h1 {
+            font-size: 2.5em;
+        }
+    }
+}

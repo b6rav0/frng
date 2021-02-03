@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5em;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Lato", serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.hide-on-desktop {
+  display: none;
+}
+
+button {
+  display: block;
+  height: 3em;
+  margin: 0 auto;
+  font-size: 1em;
+  color: #FFF;
+  background-color: #D7B73F;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  color: #2C4121;
+}
+
+section {
+  padding: 10% 5%;
+  overflow: hidden;
+}
+section h1 {
+  color: #2C4121;
+  font-size: 2.5em;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+@media (max-width: 800px) {
+  .flex {
+    display: block;
+  }
+
+  .hide-on-desktop {
+    display: block;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+
+  section h1 {
+    font-size: 2em;
+  }
+}
+footer {
+  padding: 10% 5% 5%;
+  color: #fff;
+  background: #2C4121;
+}
+footer div.column {
+  flex: 25%;
+}
+footer div.column h2 {
+  margin-bottom: 5%;
+  font-family: "Roboto Slab", sans-serif;
+}
+footer div.column ul li {
+  margin: 5% 0;
+}
+footer div.column ul li a:hover {
+  text-decoration: underline;
+}
+footer div.column:first-child {
+  padding-top: 10%;
+}
+footer div:last-child div.address {
+  margin: 5% 0;
+}
+footer div:last-child div.address h3 {
+  font-size: 1em;
+  font-weight: 600;
+}
+footer div:last-child div.address address {
+  margin: 2.5% 0 0;
+  font-style: normal;
+}
+footer div:last-child div.address address p {
+  font-size: 0.9em;
+}
+
+@media (max-width: 800px) {
+  footer div.column {
+    margin: 10% 0;
+  }
+  footer div.column:first-child {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+header {
+  width: 100%;
+}
+header nav {
+  padding: 1% 5%;
+  background: #F0F0F0;
+  overflow: hidden;
+}
+header nav ul li {
+  font-weight: 600;
+}
+header nav ul li a {
+  color: #2C4121;
+  transition: 0.3s ease-in-out;
+}
+header nav ul li.active a,
+header nav ul li:hover a {
+  padding-bottom: 2%;
+  border-bottom: 0.3em solid #2C4121;
+}
+header nav ul.show-on-desktop {
+  float: right;
+  width: 50%;
+}
+header nav ul.show-on-desktop div {
+  width: 100%;
+  padding: 2% 0;
+}
+header nav ul.show-on-desktop div li {
+  text-align: center;
+}
+header nav ul.show-on-desktop div li:first-child {
+  text-align: left;
+}
+header nav ul.show-on-desktop div li:last-child {
+  text-align: right;
+}
+header nav ul.show-on-desktop div.links-on-top {
+  border-bottom: 2px solid #D7B73F;
+}
+header nav ul.show-on-desktop div.links-on-top li {
+  flex: 50%;
+}
+header nav ul.show-on-desktop div.links-below li {
+  flex: 20%;
+}
+
+@media (max-width: 800px) {
+  span.toggle-buttons {
+    float: right;
+    color: #2C4121;
+    font-size: 2em;
+    cursor: pointer;
+  }
+
+  span.close-icon {
+    display: none;
+  }
+
+  ul.show-on-mobile {
+    width: 100%;
+    height: 0;
+    margin-top: 10%;
+    transition: 0.3s ease-in-out;
+  }
+  ul.show-on-mobile li {
+    margin: 5% 0;
+  }
+}
+section.hero {
+  color: #FFF;
+  background: grey url("../img/hero.jpg") no-repeat center;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+section.hero h1 {
+  margin-right: 50%;
+  color: #FFF;
+  font-size: 4em;
+  font-weight: 800;
+}
+section.hero p {
+  margin: 2% 60% 2% 0;
+  font-size: 1.2em;
+}
+section.hero button {
+  width: 15%;
+  margin: 0;
+}
+
+section.services img {
+  float: left;
+  width: 40em;
+  padding-right: 5%;
+}
+section.services p {
+  margin-top: 2%;
+}
+section.services ul {
+  list-style: circle;
+}
+section.services ul li {
+  margin: 1% 0;
+}
+
+section.accounts {
+  background: #B7C673;
+}
+section.accounts h1 {
+  text-align: center;
+}
+section.accounts div.flex div.column {
+  flex: 25%;
+  margin: 2.5%;
+  margin-bottom: 0;
+  padding: 2%;
+  background: #FFF;
+}
+section.accounts div.flex div.column h2 {
+  color: #2C4121;
+}
+section.accounts div.flex div.column ul {
+  margin-top: 5%;
+}
+section.accounts div.flex div.column ul li {
+  margin-top: 5%;
+}
+section.accounts div.flex div:first-child {
+  margin-left: 0;
+}
+section.accounts div.flex div:last-child {
+  margin-right: 0;
+}
+section.accounts button {
+  width: 20%;
+  margin-top: 2%;
+}
+
+section.register {
+  padding: 0;
+}
+section.register section.form-container {
+  width: 60%;
+  margin: 10% auto;
+  padding: 5%;
+  background: #F0F0F0;
+  border-top-left-radius: 20em;
+  border-top-right-radius: 20em;
+}
+section.register section.form-container h1,
+section.register section.form-container h2 {
+  text-align: center;
+}
+section.register section.form-container h1 a:hover,
+section.register section.form-container h2 a:hover {
+  text-decoration: underline;
+}
+section.register section.form-container form {
+  margin-top: 10%;
+}
+section.register section.form-container form input[type=text],
+section.register section.form-container form input[type=email],
+section.register section.form-container form input[type=number],
+section.register section.form-container form select {
+  display: block;
+  width: 100%;
+  height: 2.5em;
+  margin: 2.5% 0;
+  padding: 2%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+section.register section.form-container form input[name=fname],
+section.register section.form-container form input[name=lname] {
+  display: inline;
+  width: 45%;
+}
+section.register section.form-container form input[name=lname] {
+  margin-left: 9.5%;
+}
+section.register section.form-container form input::-webkit-outer-spin-button,
+section.register section.form-container form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+section.register section.form-container form input[type=number] {
+  -moz-appearance: textfield;
+}
+section.register section.form-container form select {
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+section.register section.form-container form select::-ms-expand {
+  display: none;
+}
+section.register section.form-container form input[type=radio] {
+  display: inline-block;
+}
+section.register section.form-container form label[for=demo] {
+  padding-right: 5%;
+}
+section.register section.form-container form div {
+  margin: 5% 0;
+}
+section.register section.form-container form div p {
+  display: inline;
+}
+section.register section.form-container form div p b {
+  color: #2C4121;
+}
+section.register section.form-container form div p a {
+  text-decoration: underline;
+}
+section.register section.form-container form button {
+  width: 30%;
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  section.hero h1 {
+    margin-right: 20%;
+    font-size: 3em;
+  }
+  section.hero p {
+    margin-right: 20%;
+  }
+  section.hero button {
+    width: 30%;
+  }
+
+  section.services img {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-bottom: 5%;
+    text-align: center;
+  }
+  section.services ul {
+    padding-left: 5%;
+  }
+
+  section.accounts div.flex {
+    margin-top: 5%;
+  }
+  section.accounts div.flex div.column {
+    margin: unset;
+    margin: 5% 0;
+    padding: 5%;
+  }
+  section.accounts button {
+    width: 30%;
+  }
+
+  section.register section.form-container {
+    width: 90%;
+  }
+  section.register section.form-container form input[name=fname],
+section.register section.form-container form input[name=lname] {
+    width: 100%;
+    margin: unset;
+    margin: 2.5% 0;
+  }
+  section.register section.form-container form button {
+    width: 30%;
+  }
+}
+@media (max-width: 400px) {
+  section.hero h1 {
+    font-size: 2.5em;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
