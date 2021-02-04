@@ -107,6 +107,9 @@ footer div:last-child div.address address {
 footer div:last-child div.address address p {
   font-size: 0.9em;
 }
+footer div:last-child details summary {
+  cursor: pointer;
+}
 
 @media (max-width: 800px) {
   footer div.column {
